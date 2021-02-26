@@ -31,13 +31,13 @@
  */
 
 define('DISQUS_PUBKEY', 'E8Uh5l5fHZ6gD8U3KycjAIAk46f68Zw7C6eW8WSjZvCLXebZ7p0r1yrYDrLilk2F');
-define('PUBLIC_KEY', '');
-define('SECRET_KEY', '');
-define('DISQUS_USERNAME', '');
-define('DISQUS_EMAIL', '');
-define('DISQUS_PASSWORD', '');
-define('DISQUS_WEBSITE', '');
-define('DISQUS_SHORTNAME', '');
+define('PUBLIC_KEY', 'bMFR0HCkZeJ0Vq6nw1Wbx8rlFSrwl6AnYzEYHUICGptyxUjG7vRvYiOjMFFkByXu');
+define('SECRET_KEY', 'sWdiXiFD0GzWEG9gEHBcBMDVyS0KCiyemLUTXVmNDMMJFWRpDgpEbQ9LitBzPnXN');
+define('DISQUS_USERNAME', 'opalhair');
+define('DISQUS_EMAIL', 'opalhair@gmail.com');
+define('DISQUS_PASSWORD', 'D12345678');
+define('DISQUS_WEBSITE', 'https://ahair.org');
+define('DISQUS_SHORTNAME', 'hair-stylist-hair-tips');
 define('DISQUS_APPROVED', true);
 define('DISQUS_BLACKLIST', false);
 define('MOD_IDENT', 1);
