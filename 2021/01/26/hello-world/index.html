@@ -234,7 +234,7 @@
           
     
   <div class="comments">
-    <div id="disqus_thread">
+    <div id="disqusapi_thread">
       <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
     </div>
   </div>
@@ -387,20 +387,24 @@
 
   
 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqusjs.css">
+<link rel="stylesheet" href="bMFR0HCkZeJ0Vq6nw1Wbx8rlFSrwl6AnYzEYHUICGptyxUjG7vRvYiOjMFFkByXu/dist/iDisqus.min.css">
 
 <script>
-NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
-  NexT.utils.getScript('//cdn.jsdelivr.net/npm/disqusjs@1/dist/disqus.js', () => {
-    window.dsqjs = new DisqusJS({
-      api       : 'https://disqus.skk.moe/disqus/' || 'https://disqus.com/api/',
-      apikey    : 'bMFR0HCkZeJ0Vq6nw1Wbx8rlFSrwl6AnYzEYHUICGptyxUjG7vRvYiOjMFFkByXu',
-      shortname : 'hair-stylist-hair-tips',
-      url       : "https://ahair.tips/2021/01/26/hello-world/",
-      identifier: "2021/01/26/hello-world/",
-      title     : "Hello World",
+NexT.utils.loadComments(document.querySelector('#disqusapi_thread'), () => {
+  NexT.utils.getScript('bMFR0HCkZeJ0Vq6nw1Wbx8rlFSrwl6AnYzEYHUICGptyxUjG7vRvYiOjMFFkByXu/dist/iDisqus.min.js', () => {
+    window.dsqapi = new iDisqus('disqusapi_thread', {
+      forum         : 'hair-stylist-hair-tips',
+      api           : 'bMFR0HCkZeJ0Vq6nw1Wbx8rlFSrwl6AnYzEYHUICGptyxUjG7vRvYiOjMFFkByXu/api/',
+      mode          : 2,
+      timeout       : '2000',  
+      url           : "https://ahair.tips/2021/01/26/hello-world/",
+      identifier    : "2021/01/26/hello-world/",
+      title         : "Hello World",
+      init          : true,
+      emojiPreview  : true,
+      relatedType   : 'Related'
     });
-  }, window.DisqusJS);
+  }, window.DisqusAPI);
 });
 </script>
 
