@@ -185,20 +185,6 @@
               </span>
 
           
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus：</span>
-    
-    <a title="disqus" href="/2021/01/26/hello-world/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2021/01/26/hello-world/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
 
         </div>
       </header>
@@ -246,32 +232,6 @@
 
           </div>
           
-      <div class="tabs tabs-comment">
-        <ul class="nav-tabs">
-            <li class="tab"><a href="#comment-disqusapi">disqusapi</a></li>
-            <li class="tab"><a href="#comment-disqus">disqus</a></li>
-        </ul>
-        <div class="tab-content">
-            <div class="tab-pane disqusapi" id="comment-disqusapi">
-              
-  <div class="comments">
-    <div id="disqusapi_thread">
-      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    </div>
-  </div>
-  
-            </div>
-            <div class="tab-pane disqus" id="comment-disqus">
-              
-  <div class="comments">
-    <div id="disqus_thread">
-      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
-    </div>
-  </div>
-  
-            </div>
-        </div>
-      </div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -419,58 +379,6 @@
   
 
   
-
-<link rel="stylesheet" href="https://ahair.tips/js/src/disqus/api/dist/iDisqus.min.css">
-
-<script>
-NexT.utils.loadComments(document.querySelector('#disqusapi_thread'), () => {
-  NexT.utils.getScript('https://ahair.tips/js/src/disqus/api/dist/iDisqus.min.js', () => {
-    window.dsqapi = new iDisqus('disqusapi_thread', {
-      forum         : 'hair-stylist-hair-tips',
-      api           : 'https://ahair.tips/js/src/disqus/api/api/',
-      mode          : 2,
-      timeout       : '2000',  
-      url           : "https://ahair.tips/2021/01/26/hello-world/",
-      identifier    : "2021/01/26/hello-world/",
-      title         : "Hello World",
-      init          : true,
-      emojiPreview  : true,
-      relatedType   : 'Related'
-    });
-  }, window.DisqusAPI);
-});
-</script>
-
-<script>
-  function loadCount() {
-    var d = document, s = d.createElement('script');
-    s.src = 'https://hair-stylist-hair-tips.disqus.com/count.js';
-    s.id = 'dsq-count-scr';
-    (d.head || d.body).appendChild(s);
-  }
-  // defer loading until the whole page loading is completed
-  window.addEventListener('load', loadCount, false);
-</script>
-<script>
-  var disqus_config = function() {
-    this.page.url = "https://ahair.tips/2021/01/26/hello-world/";
-    this.page.identifier = "2021/01/26/hello-world/";
-    this.page.title = "Hello World";
-    };
-  NexT.utils.loadComments(document.querySelector('#disqus_thread'), () => {
-    if (window.DISQUS) {
-      DISQUS.reset({
-        reload: true,
-        config: disqus_config
-      });
-    } else {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://hair-stylist-hair-tips.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', '' + +new Date());
-      (d.head || d.body).appendChild(s);
-    }
-  });
-</script>
 
 </body>
 </html>
