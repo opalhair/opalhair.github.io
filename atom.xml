@@ -6,7 +6,7 @@
   <link href="https://ahair.tips/atom.xml" rel="self"/>
   
   <link href="https://ahair.tips/"/>
-  <updated>2021-03-04T01:59:02.603Z</updated>
+  <updated>2021-03-03T11:09:31.688Z</updated>
   <id>https://ahair.tips/</id>
   
   <author>
@@ -15,48 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>再試一下</title>
-    <link href="https://ahair.tips/posts/8f7d5ce4/"/>
-    <id>https://ahair.tips/posts/8f7d5ce4/</id>
-    <published>2021-03-04T01:58:33.000Z</published>
-    <updated>2021-03-04T01:59:02.603Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;Test</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>測試</title>
-    <link href="https://ahair.tips/posts/21481/"/>
-    <id>https://ahair.tips/posts/21481/</id>
-    <published>2021-03-04T01:45:36.000Z</published>
-    <updated>2021-03-04T01:52:12.390Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;test&quot;&gt;&lt;a class=&quot;header-anchor&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>Hello World</title>
