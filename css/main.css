@@ -2576,6 +2576,24 @@ ul.breadcrumb li:last-child {
 .algolia-pagination .disabled-item {
   visibility: hidden;
 }
+.popular-posts-header {
+  border-bottom: 1px solid #eee;
+  font-size: 1.125em;
+  margin-bottom: 10px;
+  margin-top: 60px;
+}
+.popular-posts {
+  padding: 0;
+}
+.popular-posts .popular-posts-item {
+  margin-left: 2em;
+}
+.popular-posts .popular-posts-item .popular-posts-title {
+  font-size: 0.875em;
+  font-weight: normal;
+  line-height: 2.4;
+  margin: 0;
+}
 .use-motion .animated {
   animation-fill-mode: none;
   visibility: inherit;
@@ -2833,7 +2851,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #039e8a;
+  background: #b5e324;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
