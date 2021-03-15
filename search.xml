@@ -3,12 +3,12 @@
   <entry>
     <title>Hello World</title>
     <url>/2021012616107/</url>
-    <content><![CDATA[<span id="more"></span>
-<p><img src="https://img.ahair.tips/2021/03/barber01.jpg" alt=""></p>
+    <content><![CDATA[<p><img src="https://img.ahair.tips/2021/03/barber01.jpg" alt=""></p>
 <ul>
 <li><strong>Photo by <a href="https://unsplash.com/@mostafa_meraji?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">mostafa meraji</a> on <a href="https://unsplash.com/s/photos/barber-shop?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></strong></li>
 </ul>
 <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<span id="more"></span>
 <h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">¶</a>Quick Start</h2>
 <p>Test<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
 <h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">¶</a>Create a new post</h3>
