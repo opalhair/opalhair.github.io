@@ -1,31 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
     <style>
-        /* 1. 默认状态 (浅色模式, 对应方案 2) */
-        /* 显示黑色圆形底座 */
+        /* 1. 默认状态 (浅色模式, 对应方案 4) */
         .black-circle { display: block; fill: #111; }
-        /* 隐藏白色圆形底座 */
         .white-circle { display: none; fill: #fff; }
-        /* 显示白色“B.”文本 */
-        .white-text { display: block; fill: #fff; }
-        /* 隐藏黑色“B.”文本 */
-        .black-text { display: none; fill: #111; }
+        /* 显示白色剪刀剪影 (基于 Mizutani 剪刀简化而来的闭合刀刃路径) */
+        .white-scissors { display: block; fill: #fff; }
+        .black-scissors { display: none; fill: #111; }
 
-        /* 2. 🧠 极客魔法：媒体查询，当用户启用深色模式时自动执行 (对应方案 1) */
+        /* 2. 🧠 极客魔法：媒体查询，当用户启用深色模式时自动执行 (对应方案 3) */
         @media (prefers-color-scheme: dark) {
-            /* 隐藏黑色圆形底座 */
             .black-circle { display: none; }
-            /* 显示白色圆形底座 */
             .white-circle { display: block; }
-            /* 隐藏白色“B.”文本 */
-            .white-text { display: none; }
-            /* 显示黑色“B.”文本 */
-            .black-text { display: block; }
+            .white-scissors { display: none; }
+            .black-scissors { display: block; }
         }
     </style>
 
     <circle class="black-circle" cx="50" cy="50" r="48" />
     <circle class="white-circle" cx="50" cy="50" r="48" />
 
-    <text class="white-text" x="50%" y="54%" dominant-baseline="central" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="64" font-weight="900" letter-spacing="-2">B.</text>
-    <text class="black-text" x="50%" y="54%" dominant-baseline="central" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="64" font-weight="900" letter-spacing="-2">B.</text>
+    <path class="black-scissors" d="M38.5 20c-1.1 0-2.2.1-3.3.4s-2 .6-2.9 1c-1.8.8-3.3 2.1-4.4 3.8s-1.8 3.7-2.1 5.9c-.3 2.1-.2 4.3.4 6.3.6 1.9 1.6 3.7 3 5.3s3.1 2.9 5.2 3.9 4.3 1.5 6.6 1.5c1.1 0 2.2-.1 3.3-.4s2-.6 2.9-1.1c1.8-.8 3.3-2.1 4.4-3.8s1.8-3.7 2.1-5.9c.3-2.1.2-4.3-.4-6.3-.6-1.9-1.6-3.7-3-5.3s-3.1-2.9-5.2-3.9-4.3-1.5-6.6-1.5zM22.2 46c-1.1.1-2.2.3-3.2.7s-1.9.9-2.7 1.5c-1.6 1.1-2.9 2.6-3.7 4.3S11.4 56 11.4 58s.5 4 1.4 5.7c.9 1.7 2.2 3.1 3.7 4.3 1.5 1.1 3.3 2 5.2 2.6s3.9.8 6 1c1.1-.1 2.2-.3 3.2-.7s1.9-.9 2.7-1.5c1.6-1.1 2.9-2.6 3.7-4.3s1.2-3.6 1.2-5.7-.5-4-1.4-5.7c-.9-1.7-2.2-3.1-3.7-4.3-1.5-1.1-3.3-2-5.2-2.6s-3.9-.8-6-1zm30.3 34c-1.1.1-2.2.3-3.2.7s-1.9.9-2.7 1.5c-1.6 1.1-2.9 2.6-3.7 4.3S41.7 90 41.7 92s.5 4 1.4 5.7c.9 1.7 2.2 3.1 3.7 4.3 1.5 1.1 3.3 2 5.2 2.6s3.9.8 6 1c1.1-.1 2.2-.3 3.2-.7s1.9-.9 2.7-1.5c1.6-1.1 2.9-2.6 3.7-4.3s1.2-3.6 1.2-5.7-.5-4-1.4-5.7c-.9-1.7-2.2-3.1-3.7-4.3-1.5-1.1-3.3-2-5.2-2.6s-3.9-.8-6-1z"/>
+
+    <path class="white-scissors" d="[...同上一个 path 的 d 属性...]" fill="none" />
 </svg>
