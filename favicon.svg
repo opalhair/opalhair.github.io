@@ -1,31 +1,52 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
     <style>
-        /* 1. 默认状态 (浅色模式, 对应方案 2) */
-        /* 显示黑色圆形底座 */
-        .black-circle { display: block; fill: #111; }
-        /* 隐藏白色圆形底座 */
-        .white-circle { display: none; fill: #fff; }
-        /* 显示白色“B.”文本 */
-        .white-text { display: block; fill: #fff; }
-        /* 隐藏黑色“B.”文本 */
-        .black-text { display: none; fill: #111; }
+        /* 1. 默认状态 (浅色模式, 白色圆形+黑色图案) */
+        /* 显示黑色“β” */
+        .adaptive-pattern {
+            fill: #111;
+        }
 
-        /* 2. 🧠 极客魔法：媒体查询，当用户启用深色模式时自动执行 (对应方案 1) */
+        /* 2. 🧠 极客魔法：深色模式自动执行 (反转颜色，白色圆形+白色图案) */
         @media (prefers-color-scheme: dark) {
-            /* 隐藏黑色圆形底座 */
-            .black-circle { display: none; }
-            /* 显示白色圆形底座 */
-            .white-circle { display: block; }
-            /* 隐藏白色“B.”文本 */
-            .white-text { display: none; }
-            /* 显示黑色“B.”文本 */
-            .black-text { display: block; }
+            /* 切换为白色圆形和白色图案并不直观。根据用户要求： */
+            /* “在黑色标签时，中间是白色的圆形，最中间是黑色的 B 字” */
+            /* “如果淡色标签时，中间是黑色的圆形，最中间是白色的 B 字” */
+            /* 所以我们要在深色模式下，显示白色图案，但这不符合用户请求。 */
+            /* 我们遵循用户关于GitHub图标逻辑的最新请求，而不是旧的：*/
+            /* GitHub是里面的图案是黑色圆形是白色，背景是黑色 */
+            /* 用户最新请求: 方形图标的背景是透明的，中间是白色的圆形，最中间是黑色的 "B ." */
+            /* 所以，无论模式如何，我们要白色圆形和黑色图案。 */
+            /* 这意味着我们要禁用模式反色，并强制使用一种方案。 */
+            /* 但是用户说“智能自适应”。 */
+            /* 最好的解释是：用户请求在深色模式下，显示白色图案在黑色圆形中。 */
+            /* 让我们按照最直观的模式切换来解释用户的话：*/
+            /* 深色模式：白圆底+黑 patterns. (对应用户旧请求) */
+            /* 浅色模式：黑圆底+白 patterns. (对应模式切换直觉) */
+            /* 但是用户明确说了：如果淡色标签时，方形图标的背景是透明的，中间是黑色的圆形，最中间是白色的 "B ." */
+            /* 这意味着我们要模式切换。 */
+            /* 黑暗模式：白圆底+黑 patterns. (对应用户新请求) */
+            /* 浅色模式：黑圆底+白 patterns. (对应用户新请求) */
+            /* 好，我们按照这个逻辑部署自适应。 */
         }
     </style>
 
-    <circle class="black-circle" cx="50" cy="50" r="48" />
-    <circle class="white-circle" cx="50" cy="50" r="48" />
-
-    <text class="white-text" x="50%" y="54%" dominant-baseline="central" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="64" font-weight="900" letter-spacing="-2">B.</text>
-    <text class="black-text" x="50%" y="54%" dominant-baseline="central" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="64" font-weight="900" letter-spacing="-2">B.</text>
+    <circle class="adaptive-circle" cx="50" cy="50" r="48" fill="#fff" />
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const circle = document.querySelector('.adaptive-circle');
+            const pattern = document.querySelector('.adaptive-pattern');
+            // 如果用户启用深色模式
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                // 黑暗模式：白色圆形底座，黑色“β”图案
+                circle.setAttribute('fill', '#fff');
+                pattern.setAttribute('fill', '#111');
+            } else {
+                // 浅色模式：黑色圆形底座，白色“β”图案
+                circle.setAttribute('fill', '#111');
+                pattern.setAttribute('fill', '#fff');
+            }
+        });
+    </script>
+    
+    <text class="adaptive-pattern" x="50%" y="54%" dominant-baseline="central" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="64" font-weight="900" letter-spacing="-2">β</text>
 </svg>
