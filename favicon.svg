@@ -1,34 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
     <style>
-        /* 1. 全局定义核心图案（修复后的经典剪刀路径）*/
-        .adaptive-scissors {
-            fill-rule: evenodd;
-        }
-
-        /* 2. 默认状态 (浅色模式) */
+        /* 1. 默认状态 (浅色模式, 对应方案 2) */
         /* 显示黑色圆形底座 */
-        .adaptive-circle {
-            fill: #111;
-        }
-        /* 显示白色“经典剪刀” */
-        .adaptive-scissors {
-            fill: #fff;
-        }
+        .black-circle { display: block; fill: #111; }
+        /* 隐藏白色圆形底座 */
+        .white-circle { display: none; fill: #fff; }
+        /* 显示白色“B.”文本 */
+        .white-text { display: block; fill: #fff; }
+        /* 隐藏黑色“B.”文本 */
+        .black-text { display: none; fill: #111; }
 
-        /* 3. 🧠 极客魔法：深色模式自动执行 */
+        /* 2. 🧠 极客魔法：媒体查询，当用户启用深色模式时自动执行 (对应方案 1) */
         @media (prefers-color-scheme: dark) {
-            /* 切换为白色圆形底座 */
-            .adaptive-circle {
-                fill: #fff;
-            }
-            /* 切换为黑色“经典剪刀” */
-            .adaptive-scissors {
-                fill: #111;
-            }
+            /* 隐藏黑色圆形底座 */
+            .black-circle { display: none; }
+            /* 显示白色圆形底座 */
+            .white-circle { display: block; }
+            /* 隐藏白色“B.”文本 */
+            .white-text { display: none; }
+            /* 显示黑色“B.”文本 */
+            .black-text { display: block; }
         }
     </style>
 
-    <circle class="adaptive-circle" cx="50" cy="50" r="48" />
+    <circle class="black-circle" cx="50" cy="50" r="48" />
+    <circle class="white-circle" cx="50" cy="50" r="48" />
 
-    <path class="adaptive-scissors" d="M50 32 a 4 4 0 1 0 -8 0 a 4 4 0 0 0 8 0 z m-4 0 a 1 1 0 1 0 -2 0 a 1 1 0 0 0 2 0 zm4 -2 c 1 0 2 0.5 2 2 c 0 1.5 -1 2 -2 2 c -1 0 -2 -0.5 -2 -2 c 0 -1.5 1 -2 2 -2 zm0 1 c -0.5 0 -1 0.25 -1 1 c 0 0.75 0.5 1 1 1 c 0.5 0 1 -0.25 1 -1 c 0 -0.75 -0.5 -1 -1 -1 zm0 7 c -0.5 0 -1 0.25 -1 1 c 0 0.75 0.5 1 1 1 c 0.5 0 1 -0.25 1 -1 c 0 -0.75 -0.5 -1 -1 -1 zM32 65 a 8 8 0 1 1 0 -16 a 8 8 0 0 1 0 16 zm0 -12 a 4 4 0 1 0 0 -8 a 4 4 0 0 0 0 8 zm36 12 a 8 8 0 1 1 0 -16 a 8 8 0 0 1 0 16 zm0 -12 a 4 4 0 1 0 0 -8 a 4 4 0 0 0 0 8 z" />
+    <text class="white-text" x="50%" y="54%" dominant-baseline="central" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="64" font-weight="900" letter-spacing="-2">B.</text>
+    <text class="black-text" x="50%" y="54%" dominant-baseline="central" text-anchor="middle" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="64" font-weight="900" letter-spacing="-2">B.</text>
 </svg>
