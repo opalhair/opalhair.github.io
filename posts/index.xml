@@ -2,8 +2,8 @@
 &lt;pre tabindex="0"&gt;&lt;code&gt;测试一下
 &lt;/code&gt;&lt;/pre&gt;&lt;div class="geeky-tag-cloud" style="text-align: center; padding: 2rem 0; line-height: 2.5;"&gt;&lt;a href="https://ahair.tips/tags/github-actions"
 style="
-font-size: clamp(0.9rem, calc(0.8rem + 1 * 0.15rem), 2.2rem);
-opacity: clamp(0.5, calc(0.4 + 1 * 0.1), 1);
+font-size: clamp(0.9rem, calc(0.8rem + 2 * 0.15rem), 2.2rem);
+opacity: clamp(0.5, calc(0.4 + 2 * 0.1), 1);
 display: inline-block;
 margin: 0 12px;
 text-decoration: none;
@@ -13,8 +13,22 @@ font-weight: bold;
 "
 onmouseover="this.style.color='#2ecc71'; this.style.transform='scale(1.15) translateY(-3px)';"
 onmouseout="this.style.color='var(--primary)'; this.style.transform='scale(1) translateY(0)';"&gt;
-#github actions &lt;span style="font-size: 0.7rem; opacity: 0.5;"&gt;1&lt;/span&gt;
+#github actions &lt;span style="font-size: 0.7rem; opacity: 0.5;"&gt;2&lt;/span&gt;
 &lt;/a&gt;&lt;a href="https://ahair.tips/tags/hugo"
+style="
+font-size: clamp(0.9rem, calc(0.8rem + 2 * 0.15rem), 2.2rem);
+opacity: clamp(0.5, calc(0.4 + 2 * 0.1), 1);
+display: inline-block;
+margin: 0 12px;
+text-decoration: none;
+color: var(--primary);
+transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+font-weight: bold;
+"
+onmouseover="this.style.color='#2ecc71'; this.style.transform='scale(1.15) translateY(-3px)';"
+onmouseout="this.style.color='var(--primary)'; this.style.transform='scale(1) translateY(0)';"&gt;
+#hugo &lt;span style="font-size: 0.7rem; opacity: 0.5;"&gt;2&lt;/span&gt;
+&lt;/a&gt;&lt;a href="https://ahair.tips/tags/ip"
 style="
 font-size: clamp(0.9rem, calc(0.8rem + 1 * 0.15rem), 2.2rem);
 opacity: clamp(0.5, calc(0.4 + 1 * 0.1), 1);
@@ -27,7 +41,21 @@ font-weight: bold;
 "
 onmouseover="this.style.color='#2ecc71'; this.style.transform='scale(1.15) translateY(-3px)';"
 onmouseout="this.style.color='var(--primary)'; this.style.transform='scale(1) translateY(0)';"&gt;
-#hugo &lt;span style="font-size: 0.7rem; opacity: 0.5;"&gt;1&lt;/span&gt;
+#ip &lt;span style="font-size: 0.7rem; opacity: 0.5;"&gt;1&lt;/span&gt;
+&lt;/a&gt;&lt;a href="https://ahair.tips/tags/mag"
+style="
+font-size: clamp(0.9rem, calc(0.8rem + 1 * 0.15rem), 2.2rem);
+opacity: clamp(0.5, calc(0.4 + 1 * 0.1), 1);
+display: inline-block;
+margin: 0 12px;
+text-decoration: none;
+color: var(--primary);
+transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+font-weight: bold;
+"
+onmouseover="this.style.color='#2ecc71'; this.style.transform='scale(1.15) translateY(-3px)';"
+onmouseout="this.style.color='var(--primary)'; this.style.transform='scale(1) translateY(0)';"&gt;
+#mag &lt;span style="font-size: 0.7rem; opacity: 0.5;"&gt;1&lt;/span&gt;
 &lt;/a&gt;&lt;a href="https://ahair.tips/tags/%E6%9E%81%E5%AE%A2%E6%8A%98%E8%85%BE"
 style="
 font-size: clamp(0.9rem, calc(0.8rem + 1 * 0.15rem), 2.2rem);
